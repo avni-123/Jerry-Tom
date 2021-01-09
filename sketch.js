@@ -79,7 +79,11 @@ function draw() {
 
     background(rgb(30, 100, 220));
 
-    if (tom.isTouching(jerry)) {
+    if (tom4.x - jerry4.x < tom4.width / 2 - jerry4.width / 2) {
+        tom4.addAnimation("tomImg4", tom4);
+        tom4.changAnimation("tomImg4");
+        jerry4.addAnimation("jerryImage4", jerry4);
+        jerry4.changAnimation("jerryImage4");
         tom.velocityX = 0;
         jerry.visible = false;
         jerry2.visible = false;
